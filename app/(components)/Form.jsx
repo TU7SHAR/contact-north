@@ -44,6 +44,9 @@ export default function Form() {
     ) {
       alert("Fill the blanks");
     }
+
+    let regex = /^[a-zA-Z]+$/;
+    if (regex.test(mobile)) alert("Fill Blanks Properly");
   };
 
   return (
@@ -97,7 +100,7 @@ export default function Form() {
                     <div className="flex flex-col md:w-[45%] w-[100%]">
                       <label htmlFor="mobile">Phone Number</label>
                       <input
-                        type="mobile"
+                        type="tel"
                         placeholder=""
                         id="mobile"
                         value={mobile}
