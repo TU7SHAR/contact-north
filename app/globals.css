@@ -15,7 +15,6 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,4 +23,81 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.dropbars {
+  @apply dropdown-hover !important;
+}
+
+@media screen and (max-width: 940px) {
+  .dropbars {
+    @apply dropdown;
+  }
+  .res {
+    @apply hidden  text-[0px] min-h-[0px] min-w-[0px] overflow-clip;
+  }
+
+  .sz {
+    @apply mx-2;
+  }
+
+  .space {
+    @apply justify-end;
+  }
+
+  .sx {
+    @apply text-sm;
+  }
+
+  .col {
+    @apply flex-row text-sm;
+  }
+}
+
+@media screen and (min-width: 638px) {
+  .msz {
+    @apply hidden;
+  }
+}
+
+.blob {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(127, 17, 224, 0.42) 41.77%,
+    #5865f2 100%
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(80%, -5%);
+  filter: blur(100px);
+}
+
+.blob1 {
+  width: 200px;
+  height: 400px;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(127, 17, 204, 0.42) 21.77%,
+    #5865f2 100%
+  );
+  position: absolute;
+  filter: blur(150px);
+}
+
+.blob2 {
+  width: 20vw;
+  height: 20vh;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgb(45, 9, 9) 31.35%, #ff0f0f 100%);
+  transform: translate(180%, -210%);
+  filter: blur(100px);
+}
+
+.center {
+  @apply flex justify-center;
 }
