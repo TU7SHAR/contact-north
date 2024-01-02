@@ -8,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className=" max-w-[100vw] min-h-[100vh] flex flex-col overflow-x-hidden">
+      <body className=" max-w-[100vw] min-h-[100vh] flex flex-col overflow-x-hidden  font-normal text-xs text-neutral-400 ">
         {children}
       </body>
     </html>

@@ -4,18 +4,19 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <footer className="max-w-[100vw] min-w-[100vw] cursor-pointer ">
+      <footer className="max-w-[100vw] min-w-[100vw] cursor-pointer pl-5 ">
         <div className="border-t border-opacity-10 border-white w-[100vw] flex flex-col  justify-center items-center">
-          <div className="lg:py-10 p-3 xl:mx-[17rem] w-max">
-            <div className="flex-col  justify-centeritems-start lg:gap-[34px] flex">
-              <div className="items-center justify-between md:gap-[150px] mb-5 md:inline-flex">
-                <div className="flex-col   justify-center items-start md:gap-5 inline-flex  mb-10">
+          <div className="lg:py-10 p-3 w-max">
+            <div className="flex-col justify-centeritems-start lg:gap-[34px] flex sm:ml-0 ml-[1rem]">
+              <div className="items-center lg:mr-[15rem] justify-between md:gap-[0px] mb-5 md:inline-flex">
+                <div className="flex-col   justify-center items-start  inline-flex md:mx-[5rem] mb-10">
                   <div className="w-[100%]">
                     <Image
                       src="/logo.png"
                       alt="logo.png"
                       width={40}
                       height={40}
+                      className="mb-6"
                     />
                     <div className="w-[300px] h-[39px] text-neutral-400 text-[15px] font-medium   leading-normal">
                       Making the world a better place through constructing
@@ -24,8 +25,8 @@ export default function Footer() {
                   </div>
                 </div>
 
-                <div className=" md:gap-[100px] gap-4 flex lg:flex-row flex-col">
-                  <div className="inline-flex space-x-[6rem]">
+                <div className=" md:gap-[75px]  flex lg:flex-row flex-col lg:mr-[10rem] mr-[5rem]">
+                  <div className="inline-flex space-x-[3rem]">
                     <div className="w-[71px] flex-col  justify-center items-center gap-3 inline-flex">
                       <div className="w-[71px] h-[30px] text-white text-[15px] font-semibold   leading-normal">
                         Solutions
@@ -58,7 +59,7 @@ export default function Footer() {
                       </div>
                     </div>
                   </div>
-                  <div className="inline-flex space-x-[6rem]">
+                  <div className="inline-flex space-x-[3rem]">
                     <div className="w-[79px] flex-col  justify-center items-center gap-3 inline-flex">
                       <div className="w-[79px] h-[30px] text-white text-[15px] font-semibold   leading-normal">
                         Community
@@ -90,7 +91,7 @@ export default function Footer() {
                   </div>
                 </div>
               </div>
-              <div className="xl:w-[1280px] lg:w-[950px] w-[97vw] h-[0px]  border border-white border-opacity-10 "></div>
+              <div className="xl:w-[1280px] lg:w-[950px] w-[97vw] h-[0px] md:ml-[5rem]  border border-white border-opacity-10 "></div>
               <div className=" w-[95vw] text-neutral-400 text-[15px] font-medium center leading-normal text-wrap">
                 © 2023 The North Solution. All rights reserved.
               </div>

@@ -41,6 +41,10 @@ body {
     @apply mx-2;
   }
 
+  .nasp {
+    @apply mx-10;
+  }
+
   .space {
     @apply justify-end;
   }
@@ -53,7 +57,11 @@ body {
     @apply flex-row text-sm;
   }
 }
-
+@media screen and (max-width: 1060px) {
+  .hd {
+    @apply hidden;
+  }
+}
 @media screen and (min-width: 638px) {
   .msz {
     @apply hidden;
@@ -61,40 +69,48 @@ body {
 }
 
 .blob {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 500px;
   border-radius: 50%;
   background: linear-gradient(
-    180deg,
-    rgba(127, 17, 224, 0.42) 41.77%,
+    120deg,
+    rgba(127, 17, 224, 0.42) 61.77%,
     #5865f2 100%
   );
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(80%, -5%);
+  top: 15%;
+  left: 65%;
   filter: blur(100px);
 }
 
 .blob1 {
   width: 200px;
+  z-index: 2;
   height: 400px;
   border-radius: 50%;
   background: linear-gradient(
-    180deg,
+    1800deg,
     rgba(127, 17, 204, 0.42) 21.77%,
     #5865f2 100%
   );
   position: absolute;
+  top: 20%;
+  left: 10%;
   filter: blur(150px);
 }
 
 .blob2 {
-  width: 20vw;
-  height: 20vh;
+  width: 300px;
+  height: 500px;
   border-radius: 50%;
-  background: linear-gradient(180deg, rgb(45, 9, 9) 31.35%, #ff0f0f 100%);
-  transform: translate(180%, -210%);
+  background: linear-gradient(
+    250deg,
+    rgba(127, 17, 224, 0.42) 61.77%,
+    #5865f2 100%
+  );
+  position: absolute;
+  top: 20%;
+  left: 10%;
   filter: blur(100px);
 }
 
