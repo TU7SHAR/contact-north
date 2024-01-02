@@ -61,9 +61,9 @@ export default function Form() {
                     How may We assist you?
                   </h2>
                   <p className="md:text-xl text-sm p-1 text-opacity-50 text-white center whitespace-break-spaces">
-                    Have a chat with us today!{" "}
+                    Have a chat with us today!
                     <span className="res">
-                      About whatever project you'd like!
+                      About whatever project you&apos;d like!
                     </span>
                   </p>
                 </div>
@@ -131,7 +131,7 @@ export default function Form() {
                       className="textarea border-2 border-[#292929] bg-[#292929] focus:outline-none mb-3"
                       placeholder=""
                       rows={4}
-                    ></textarea>{" "}
+                    ></textarea>
                   </div>
                   <button
                     onClick={handleSubmit}
