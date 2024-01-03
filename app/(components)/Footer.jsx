@@ -92,7 +92,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className="xl:w-[1280px] lg:w-[950px] w-[97vw] h-[0px] md:ml-[5rem]  border border-white border-opacity-10 "></div>
-              <div className=" w-[95vw] text-neutral-400 text-[15px] font-medium center leading-normal text-wrap">
+              <div className=" w-[95vw] text-neutral-400 text-[15px] font-medium pl-[5rem] leading-normal text-wrap">
                 © 2023 The North Solution. All rights reserved.
               </div>
             </div>

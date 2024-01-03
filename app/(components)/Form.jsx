@@ -65,13 +65,13 @@ export default function Form() {
                       Have a chat with us today about whatever project &nbsp;
                     </span>
                     <span className="res flex justify-center">
-                      you&apos;d like!
+                      you&apos;d like.
                     </span>
                   </p>
                 </div>
                 <form onSubmit={handleSubmit} className=" font-semibold">
-                  <div className="flex md:space-x-[7rem] flex-col md:flex-row mb-7">
-                    <div className="flex flex-col md:w-[50%] w-[100%]">
+                  <div className="flex md:space-x-[1.7rem] lg:mb-7  flex-col md:flex-row ">
+                    <div className="flex flex-col md:w-[50%] w-[100%] ">
                       <label htmlFor="name">
                         Full Name <span className="text-red-400">*</span>
                       </label>
@@ -81,7 +81,7 @@ export default function Form() {
                         id="name"
                         value={name}
                         onChange={handleName}
-                        className="border border-[#292929] bg-[#292929]  rounded-md text-lg focus:outline-none text-white text-opacity-70 p-1"
+                        className="border border-[#292929] bg-[#292929] mb-2 rounded-md text-lg focus:outline-none text-white text-opacity-70 p-1"
                       />
                     </div>
                     <div className="flex flex-col md:w-[50%]   w-[100%]">
@@ -94,11 +94,11 @@ export default function Form() {
                         id="mail"
                         value={mail}
                         onChange={handleMail}
-                        className="border border-[#292929] bg-[#292929]  rounded-md text-lg focus:outline-none text-white text-opacity-70 p-1"
+                        className="border border-[#292929] mb-2 bg-[#292929]  rounded-md text-lg focus:outline-none text-white text-opacity-70 p-1"
                       />
                     </div>
                   </div>
-                  <div className="flex md:space-x-[7rem]  md:flex-row flex-col  mb-7">
+                  <div className="flex md:space-x-[1.7rem]   md:flex-row flex-col  lg:mb-7  ">
                     <div className="flex flex-col md:w-[50%] w-[100%]">
                       <label htmlFor="mobile">Phone Number</label>
                       <input
@@ -107,7 +107,7 @@ export default function Form() {
                         id="mobile"
                         value={mobile}
                         onChange={handleMobile}
-                        className="border border-[#292929] bg-[#292929]  rounded-md text-lg focus:outline-none text-white text-opacity-70 p-1"
+                        className="border border-[#292929] bg-[#292929] mb-2 rounded-md text-lg focus:outline-none text-white text-opacity-70 p-1"
                       />
                     </div>
                     <div className="flex flex-col md:w-[50%] w-[100%]">
@@ -118,11 +118,11 @@ export default function Form() {
                         id="sbj"
                         value={sbj}
                         onChange={handleSubject}
-                        className=" border border-[#292929] bg-[#292929]  rounded-md text-lg focus:outline-none text-white text-opacity-70 p-1"
+                        className=" border border-[#292929] bg-[#292929] mb-2 rounded-md text-lg focus:outline-none text-white text-opacity-70 p-1"
                       />
                     </div>
                   </div>
-                  <div className=" my-9 flex flex-col">
+                  <div className=" mb-9 flex flex-col">
                     <label htmlFor="msg">
                       Message <span className="text-red-400">*</span>
                     </label>
@@ -130,7 +130,7 @@ export default function Form() {
                       id="msg"
                       value={msg}
                       onChange={handleMsg}
-                      className="textarea border-2 border-[#292929] bg-[#292929]  focus:outline-none mb-3"
+                      className="textarea border-2 border-[#292929] bg-[#292929]  focus:outline-none focus:border-[#292929] mb-3"
                       placeholder=""
                       rows={4}
                     ></textarea>
